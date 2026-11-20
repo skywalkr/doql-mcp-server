@@ -1,0 +1,14 @@
+{
+  "servers": {
+    "device42-doql-stdio": {
+      "type": "stdio",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "args": ["-m", "doql_mcp", "--transport", "stdio"],
+      "envFile": "${workspaceFolder}/.env"
+    },
+    "device42-doql-http": {
+      "type": "http",
+      "url": "http://127.0.0.1:8000/mcp"
+    }
+  }
+}

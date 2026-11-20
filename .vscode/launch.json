@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "doql-mcp (stdio)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "doql_mcp",
+      "args": ["--transport", "stdio"],
+      "envFile": "${workspaceFolder}/.env",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      "name": "doql-mcp (streamable-http)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "doql_mcp",
+      "args": ["--transport", "streamable-http", "--host", "127.0.0.1", "--port", "8000"],
+      "envFile": "${workspaceFolder}/.env",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    }
+  ]
+}
